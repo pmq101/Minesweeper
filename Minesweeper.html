@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Minesweeper</title>
+
+        <link rel="stylesheet" href="a3.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="a3.js"></script>
+    </head>
+
+    <body>
+        <div class=title>
+            <h1>Welcome to Minesweeper!</h1>
+            <div class=high-score>
+                <h2>High Score: N/A</h2>
+            </div>
+            <div class=game-end>
+
+            </div>
+        </div>
+
+        <div class=board-controls>
+            <h4>Board Controls</h4>
+            
+            # of rows: <input class="rowNum" type="text" value="8"><br>
+            *(min rows = 8, max rows = 30)<br><br>
+            
+            # of columns: <input class="colNum" type="text" value="8"><br>
+            *(min columns = 8, max columns = 40)<br><br>
+            
+            # of bombs: <input class="bombNum" type="text" value="10"><br>
+            *(min bombs = 1)<br><br>
+
+            <button class="board-button">Create Board</button><br><br>
+            <button class="restart-button">Restart</button><br><br>
+        </div>
+
+        <div class=timer></div>
+
+        <div class=bombsLeft></div>
+
+        <div class=board></div>
+
+    </body>
+</html>
